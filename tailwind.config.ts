@@ -7,16 +7,30 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    // screens: {
+    //   // @media (max-width: 1200px) { ... }
+    //   md: { max: '1200px' },
+    //   // @media (max-width: 767px) { ... }
+    //   sm: { max: '767px' },
+    // },
     extend: {
       gridTemplateColumns: {
         '13': 'repeat(13, minmax(0, 1fr))',
       },
       colors: {
+        // 컬러 커스터마이징
         blue: {
           400: '#2589FE',
           500: '#0070F3',
           600: '#2F6FEB',
         },
+        gray: {
+          400: '#999',
+          500: '#666',
+          600: '#292929',
+        },
+        'point-color1': '#ffce32',
+        'point-color2': '#009223',
       },
     },
     keyframes: {
